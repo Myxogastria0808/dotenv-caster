@@ -5,10 +5,19 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "publish": "--access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myxogastria0808/dotenv-caster.git"
   },
   "author": "Yuki Osada",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Myxogastria0808/dotenv-caster/issues"
+  },
+  "homepage": "https://github.com/Myxogastria0808/dotenv-caster#readme",
   "dependencies": {
     "typescript": "^5.4.5"
   }
