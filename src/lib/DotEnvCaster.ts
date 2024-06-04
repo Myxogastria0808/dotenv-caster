@@ -39,7 +39,7 @@ export class DotEnvCaster {
       throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
     }
   }
-  castBool(constant: string | undefined): boolean {
+  castBoolean(constant: string | undefined): boolean {
     if (typeof constant === 'string') {
       try {
         return Boolean(constant);

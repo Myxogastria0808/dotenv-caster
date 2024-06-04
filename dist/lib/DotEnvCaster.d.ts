@@ -3,6 +3,6 @@ export declare class DotEnvCaster {
     castNumber(constant: string | undefined): number;
     castBigInt(constant: string | undefined): bigint;
     castSymbol(constant: string | undefined): symbol;
-    castBool(constant: string | undefined): boolean;
+    castBoolean(constant: string | undefined): boolean;
     castNull(constant: string | undefined): null;
 }
