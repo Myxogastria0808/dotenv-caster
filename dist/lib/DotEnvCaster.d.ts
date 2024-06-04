@@ -1,6 +1,6 @@
 export declare class DotEnvCaster {
-    checkIsString(constant: string | undefined): string;
-    checkIsStringAndConvertToNumber(constant: string | undefined): number;
-    checkIsStringAndConvertToBoolean(constant: string | undefined): boolean;
-    checkIsStringAndConvertToNull(constant: string | undefined): null;
+    str(constant: string | undefined): string;
+    num(constant: string | undefined): number;
+    bool(constant: string | undefined): boolean;
+    null(constant: string | undefined): null;
 }

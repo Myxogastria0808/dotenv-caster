@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DotEnvCaster = void 0;
 class DotEnvCaster {
-    checkIsString(constant) {
+    str(constant) {
         if (typeof constant === 'string') {
             return constant;
         }
@@ -10,7 +10,7 @@ class DotEnvCaster {
             throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
         }
     }
-    checkIsStringAndConvertToNumber(constant) {
+    num(constant) {
         if (typeof constant === 'string') {
             try {
                 return Number(constant);
@@ -23,7 +23,7 @@ class DotEnvCaster {
             throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
         }
     }
-    checkIsStringAndConvertToBoolean(constant) {
+    bool(constant) {
         if (typeof constant === 'string') {
             try {
                 return Boolean(constant);
@@ -36,7 +36,7 @@ class DotEnvCaster {
             throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
         }
     }
-    checkIsStringAndConvertToNull(constant) {
+    null(constant) {
         if (typeof constant === 'string') {
             if (constant === 'null') {
                 return null;

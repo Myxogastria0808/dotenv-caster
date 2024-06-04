@@ -1,12 +1,12 @@
 export class DotEnvCaster {
-  checkIsString(constant: string | undefined): string {
+  castString(constant: string | undefined): string {
     if (typeof constant === 'string') {
       return constant;
     } else {
       throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
     }
   }
-  checkIsStringAndConvertToNumber(constant: string | undefined): number {
+  castNumber(constant: string | undefined): number {
     if (typeof constant === 'string') {
       try {
         return Number(constant);
@@ -17,7 +17,29 @@ export class DotEnvCaster {
       throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
     }
   }
-  checkIsStringAndConvertToBoolean(constant: string | undefined): boolean {
+  castBigInt(constant: string | undefined): bigint {
+    if (typeof constant === 'string') {
+      try {
+        return BigInt(constant);
+      } catch (_e) {
+        throw new Error('This constant can not convert to bigint.');
+      }
+    } else {
+      throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
+    }
+  }
+  castSymbol(constant: string | undefined): symbol {
+    if (typeof constant === 'string') {
+      try {
+        return Symbol(constant);
+      } catch (_e) {
+        throw new Error('This constant can not convert to symbol.');
+      }
+    } else {
+      throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
+    }
+  }
+  castBool(constant: string | undefined): boolean {
     if (typeof constant === 'string') {
       try {
         return Boolean(constant);
@@ -28,7 +50,7 @@ export class DotEnvCaster {
       throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
     }
   }
-  checkIsStringAndConvertToNull(constant: string | undefined): null {
+  castNull(constant: string | undefined): null {
     if (typeof constant === 'string') {
       if (constant === 'null') {
         return null;
