@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DotEnvCaster = void 0;
 class DotEnvCaster {
-    str(constant) {
+    castString(constant) {
         if (typeof constant === 'string') {
             return constant;
         }
@@ -10,7 +10,7 @@ class DotEnvCaster {
             throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
         }
     }
-    num(constant) {
+    castNumber(constant) {
         if (typeof constant === 'string') {
             try {
                 return Number(constant);
@@ -23,7 +23,33 @@ class DotEnvCaster {
             throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
         }
     }
-    bool(constant) {
+    castBigInt(constant) {
+        if (typeof constant === 'string') {
+            try {
+                return BigInt(constant);
+            }
+            catch (_e) {
+                throw new Error('This constant can not convert to bigint.');
+            }
+        }
+        else {
+            throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
+        }
+    }
+    castSymbol(constant) {
+        if (typeof constant === 'string') {
+            try {
+                return Symbol(constant);
+            }
+            catch (_e) {
+                throw new Error('This constant can not convert to symbol.');
+            }
+        }
+        else {
+            throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
+        }
+    }
+    castBool(constant) {
         if (typeof constant === 'string') {
             try {
                 return Boolean(constant);
@@ -36,7 +62,7 @@ class DotEnvCaster {
             throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
         }
     }
-    null(constant) {
+    castNull(constant) {
         if (typeof constant === 'string') {
             if (constant === 'null') {
                 return null;

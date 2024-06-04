@@ -1,12 +1,12 @@
 {
   "name": "dotenv-caster",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "This is a dotenv caster.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prepare": "npm run build",
-    "publish": "--access=public"
+    "prepare": "npx tsc",
+    "pub": "npm publish --access=public"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,8 @@
 export declare class DotEnvCaster {
-    str(constant: string | undefined): string;
-    num(constant: string | undefined): number;
-    bool(constant: string | undefined): boolean;
-    null(constant: string | undefined): null;
+    castString(constant: string | undefined): string;
+    castNumber(constant: string | undefined): number;
+    castBigInt(constant: string | undefined): bigint;
+    castSymbol(constant: string | undefined): symbol;
+    castBool(constant: string | undefined): boolean;
+    castNull(constant: string | undefined): null;
 }
