@@ -1,0 +1,16 @@
+{
+  "name": "dotenv-caster",
+  "version": "1.0.1",
+  "description": "This is a dotenv caster.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "author": "Yuki Osada",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+}
