@@ -1,7 +1,13 @@
 {
   "name": "dotenv-caster",
-  "version": "2.0.3",
-  "description": "This is a dotenv caster.",
+  "version": "2.0.4",
+  "description": "A tiny dotenv caster.",
+  "keywords": [
+    "dotenv",
+    ".env",
+    "typescript",
+    "primitive type"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
