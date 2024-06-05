@@ -2,6 +2,9 @@
 
 dotenv-caster is a tiny package that converts `string | undefined` to certain `primitive types`.
 
+> [!IMPORTANT]
+> Be sure to use the latest version.
+
 ## How to Use
 
 This is an example of use if the following is written in `.env`.
@@ -19,8 +22,9 @@ NULL_SAMPLE=null
 The following is an example of use. `dotenv-caster` is intended for use in projects that use `dotenv`.
 
 ```typescript
-import { DotEnvCaster } from 'dotenv-caster';
 import dotenv from 'dotenv';
+//import dotenv-caster
+import { DotEnvCaster } from 'dotenv-caster';
 
 dotenv.config();
 
@@ -49,9 +53,12 @@ const nullSample: null = dotenvCaster.castNull(process.env.NULL_SAMPLE);
 
 ### Create an instance
 
-When using `dotenv-caster`, first create an instance as follows.
+When using `dotenv-caster`, first import `dotenv-caster` and create an instance as follows.
 
 ```typescript
+//import dotenv-caster
+import { DotEnvCaster } from 'dotenv-caster';
+
 //Create an instance
 const dotenvCaster = new DotEnvCaster();
 ```
