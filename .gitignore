@@ -3,3 +3,4 @@ node_modules
 
 #TypeDoc
 docs
+!docs/.gitkepp
