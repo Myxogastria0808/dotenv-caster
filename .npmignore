@@ -1,3 +1,7 @@
 src/docs/
 docs/
 .github/
+.vscode/
+.prettierrc
+typedoc.json
+tsconfig.json

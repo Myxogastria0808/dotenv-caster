@@ -1,6 +1,6 @@
 {
   "name": "dotenv-caster",
-  "version": "2.0.7",
+  "version": "2.0.9",
   "description": "A tiny dotenv caster.",
   "keywords": [
     "dotenv",
@@ -13,6 +13,7 @@
   "scripts": {
     "prepare": "npx tsc",
     "pub": "npm publish --access=public",
+    "unpub": "npm unpublish  dotenv-caster@${npm_config_v}",
     "typedoc:github": "npx typedoc",
     "typedoc:local": "npx typedoc --out ./src/docs/",
     "install:typedoc": "npm i typedoc@0.25.13"
