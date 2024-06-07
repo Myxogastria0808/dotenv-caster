@@ -13,7 +13,8 @@
   "scripts": {
     "prepare": "npx tsc",
     "pub": "npm publish --access=public",
-    "typedoc": "npx typedoc",
+    "typedoc:github": "npx typedoc",
+    "typedoc:local": "npx typedoc --out ./src/docs/",
     "install:typedoc": "npm i typedoc@0.25.13"
   },
   "repository": {

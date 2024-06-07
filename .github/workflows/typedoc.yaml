@@ -19,7 +19,7 @@ jobs:
       - name: Install typedoc
         run: npm run install:typedoc
       - name: Generate Document
-        run: npm run typedoc
+        run: npm run typedoc:github
       - name: push Document to typedoc-document branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
