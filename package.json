@@ -12,7 +12,9 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "prepare": "npx tsc",
-    "pub": "npm publish --access=public"
+    "pub": "npm publish --access=public",
+    "typedoc": "npx typedoc",
+    "install:typedoc": "npm i typedoc@0.25.13"
   },
   "repository": {
     "type": "git",
@@ -26,5 +28,8 @@
   "homepage": "https://github.com/Myxogastria0808/dotenv-caster#readme",
   "dependencies": {
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "typedoc": "^0.25.13"
   }
 }
