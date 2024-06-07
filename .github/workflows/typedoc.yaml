@@ -22,10 +22,10 @@ jobs:
         run: npm run install:typedoc
       - name: Generate Document
         run: npm run typedoc:github
-      - name: push Document to typedoc-document branch
+      - name: push Document to gh-pages branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: typedoc-document
+          target_branch: gh-pages
           build_dir: docs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
