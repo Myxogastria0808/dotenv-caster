@@ -1,5 +1,8 @@
-#node_modules
+# Nix
+.direnv
+
+# npm
 node_modules
 
-#TypeDoc
+# TypeDoc
 src/docs
