@@ -2,9 +2,9 @@
 .git/
 .github/
 .vscode/
-dist/
+coverage/
 docs/
-src/docs/
+.env
 .envrc
 .gitignore
 .npmignore

@@ -1,8 +1,6 @@
-# Nix
 .direnv
-
-# npm
+coverage
+dist
+docs
+html
 node_modules
-
-# TypeDoc
-src/docs
