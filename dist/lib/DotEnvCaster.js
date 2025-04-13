@@ -48,12 +48,7 @@ class DotEnvCaster {
             if (!(constant === 'true' || constant === 'false')) {
                 throw new Error('This constant can not convert to boolean.');
             }
-            try {
-                return Boolean(constant);
-            }
-            catch (_e) {
-                throw new Error('This constant can not convert to boolean.');
-            }
+            return Boolean(constant);
         }
         else {
             throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
