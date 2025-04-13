@@ -1,5 +1,10 @@
 # dotenv-caster
 
+[![test](https://github.com/Myxogastria0808/dotenv-caster/actions/workflows/test.yaml/badge.svg)](https://github.com/Myxogastria0808/dotenv-caster/actions/workflows/test.yaml)
+![NPM Type Definitions](https://img.shields.io/npm/types/dotenv-caster)
+![GitHub License](https://img.shields.io/github/license/Myxogastria0808/dotenv-caster)
+![GitHub Release](https://img.shields.io/github/v/release/Myxogastria0808/dotenv-caster)
+
 dotenv-caster is a tiny package that converts `string | undefined` to certain `primitive types`.
 
 > [!IMPORTANT]
@@ -12,7 +17,7 @@ This is an example of use if the following is written in `.env`.
 ```.env
 STRING_SAMPLE=Hello
 NUMBER_SAMPLE=0
-BIGINT_SAMPLE=123456789
+BIGINT_SAMPLE=1234567890123456789012345678901234567890
 SYMBOL_SAMPLE=SYMBOL
 BOOLEAN_SAMPLE=true
 NULL_SAMPLE=null
