@@ -8,11 +8,11 @@ export class DotEnvCaster {
   }
   castNumber(constant: string | undefined): number {
     if (typeof constant === 'string') {
-      try {
-        return Number(constant);
-      } catch (_e) {
+      const result = Number(constant);
+      if (isNaN(result) || !isFinite(result)) {
         throw new Error('This constant can not convert to number.');
       }
+      return result;
     } else {
       throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
     }
@@ -41,6 +41,9 @@ export class DotEnvCaster {
   }
   castBoolean(constant: string | undefined): boolean {
     if (typeof constant === 'string') {
+      if (!(constant === 'true' || constant === 'false')) {
+        throw new Error('This constant can not convert to boolean.');
+      }
       try {
         return Boolean(constant);
       } catch (_e) {
