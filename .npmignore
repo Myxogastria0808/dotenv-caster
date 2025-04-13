@@ -17,4 +17,4 @@ flake.nix
 renovate.json
 tsconfig.json
 typedoc.json
-vitest.config.json
+vitest.config.ts
