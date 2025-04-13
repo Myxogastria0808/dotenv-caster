@@ -28,7 +28,7 @@ export default defineConfig({
         'renovate.json',
         'tsconfig.json',
         'typedoc.json',
-        'vite.config.ts',
+        'vitest.config.ts',
       ],
     },
     // @vitest/ui
