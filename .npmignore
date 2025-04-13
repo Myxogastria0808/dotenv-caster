@@ -12,8 +12,9 @@ src/**/*.test.ts
 .gitignore
 .npmignore
 .prettierrc
-flake.nix
 flake.lock
+flake.nix
 renovate.json
-typedoc.json
 tsconfig.json
+typedoc.json
+vitest.config.json
