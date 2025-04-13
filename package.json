@@ -30,7 +30,7 @@
   "bugs": {
     "url": "https://github.com/Myxogastria0808/dotenv-caster/issues"
   },
-  "homepage": "https://github.com/Myxogastria0808/dotenv-caster#readme",
+  "homepage": "https://myxogastria0808.github.io/dotenv-caster/",
   "dependencies": {
     "typescript": "^5.4.5"
   },
