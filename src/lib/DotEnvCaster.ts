@@ -30,11 +30,7 @@ export class DotEnvCaster {
   }
   castSymbol(constant: string | undefined): symbol {
     if (typeof constant === 'string') {
-      try {
-        return Symbol(constant);
-      } catch (_e) {
-        throw new Error('This constant can not convert to symbol.');
-      }
+      return Symbol(constant);
     } else {
       throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
     }
