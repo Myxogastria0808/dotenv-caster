@@ -1,11 +1,12 @@
 # dotenv-caster
 
-[![test](https://github.com/Myxogastria0808/dotenv-caster/actions/workflows/test.yaml/badge.svg)](https://github.com/Myxogastria0808/dotenv-caster/actions/workflows/test.yaml)
-[![docs](https://github.com/Myxogastria0808/dotenv-caster/actions/workflows/docs.yaml/badge.svg)](https://github.com/Myxogastria0808/dotenv-caster/actions/workflows/docs.yaml)
+[![Test](https://github.com/Myxogastria0808/dotenv-caster/actions/workflows/test.yaml/badge.svg)](https://github.com/Myxogastria0808/dotenv-caster/actions/workflows/test.yaml)
+[![Docs](https://github.com/Myxogastria0808/dotenv-caster/actions/workflows/docs.yaml/badge.svg)](https://github.com/Myxogastria0808/dotenv-caster/actions/workflows/docs.yaml)
+[![NPM Version](https://img.shields.io/npm/v/dotenv-caster.svg)](https://www.npmjs.com/package/dotenv-caster)
+![GitHub Release](https://img.shields.io/github/v/release/Myxogastria0808/dotenv-caster)
 ![Vitest](https://img.shields.io/badge/-vitest-6e9f18?style=flat&logo=vitest&logoColor=ffffff)
 ![NPM Type Definitions](https://img.shields.io/npm/types/dotenv-caster)
 ![GitHub License](https://img.shields.io/github/license/Myxogastria0808/dotenv-caster)
-![GitHub Release](https://img.shields.io/github/v/release/Myxogastria0808/dotenv-caster)
 
 dotenv-caster is a tiny package that converts `string | undefined` to certain `primitive types`.
 
