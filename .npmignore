@@ -4,6 +4,9 @@
 .vscode/
 coverage/
 docs/
+html/
+node_modules/
+src/**/*.test.ts
 .env
 .envrc
 .gitignore
