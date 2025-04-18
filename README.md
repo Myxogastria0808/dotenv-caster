@@ -4,11 +4,11 @@
 [![Docs](https://github.com/Myxogastria0808/dotenv-caster/actions/workflows/docs.yaml/badge.svg)](https://github.com/Myxogastria0808/dotenv-caster/actions/workflows/docs.yaml)
 [![NPM Version](https://img.shields.io/npm/v/dotenv-caster.svg)](https://www.npmjs.com/package/dotenv-caster)
 ![GitHub Release](https://img.shields.io/github/v/release/Myxogastria0808/dotenv-caster)
-![Vitest](https://img.shields.io/badge/-vitest-6e9f18?style=flat&logo=vitest&logoColor=ffffff)
 ![NPM Type Definitions](https://img.shields.io/npm/types/dotenv-caster)
 [![Download NPM](https://img.shields.io/npm/dm/dotenv-caster.svg?style=flat)](https://www.npmjs.com/package/dotenv-caster/)
 ![GitHub License](https://img.shields.io/github/license/Myxogastria0808/dotenv-caster)
-[![Typedoc](https://img.shields.io/badge/docs-typedoc-blue?style=flat-square&logo=typescript&logoColor=white)]
+![Vitest](https://img.shields.io/badge/-vitest-6e9f18?style=flat&logo=vitest&logoColor=ffffff)
+![Typedoc](https://img.shields.io/badge/docs-typedoc-blue?style=flat-square&logo=typescript&logoColor=white)
 [![RenovateBot](https://img.shields.io/badge/RenovateBot-1A1F6C?logo=renovate&logoColor=fff)](#)
 
 dotenv-caster is a tiny package that converts `string | undefined` to certain `primitive types`.
