@@ -28,6 +28,16 @@ https://myxogastria0808.github.io/dotenv-caster/coverage/
 
 https://myxogastria0808.github.io/dotenv-caster/html/
 
+## DeepWiki
+
+> [!WARNING]
+> The accuracy of the contents of generated deepwiki has not been verified by me.
+> 
+> I recommend that you look at the documentation at [typedoc](https://myxogastria0808.github.io/dotenv-caster/).
+
+
+https://deepwiki.com/Myxogastria0808/dotenv-caster/
+
 ## How to Use
 
 This is an example of use if the following is written in `.env`.
