@@ -1,6 +1,6 @@
 {
   "name": "dotenv-caster",
-  "version": "2.1.9",
+  "version": "2.1.10",
   "description": "A tiny dotenv caster.",
   "keywords": [
     "dotenv",
