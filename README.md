@@ -32,7 +32,7 @@ https://myxogastria0808.github.io/dotenv-caster/html/
 
 > [!WARNING]
 > The accuracy of the contents of generated deepwiki has not been verified by me.
-> 
+>
 > I recommend that you look at the documentation at [typedoc](https://myxogastria0808.github.io/dotenv-caster/).
 
 
@@ -77,10 +77,6 @@ const booleanSample: boolean = dotenvCaster.castBoolean(process.env.BOOLEAN_SAMP
 //string | undefined -> null
 const nullSample: null = dotenvCaster.castNull(process.env.NULL_SAMPLE);
 ```
-
-### examples showing the use
-
-[dotenv-caster-sample](https://github.com/Myxogastria0808/dotenv-caster-sample)
 
 ## Detail
 
