@@ -23,13 +23,13 @@ jobs:
         id: vitest
         continue-on-error: true
         run: nix develop --command bash -c "npm i && npm run ui"
-      - name: Move Vitest UI Reposrt
+      - name: Move Vitest UI Report
         run: |
           mv ./html/ ./docs/html
-      - name: Build Vitest Coverate (@vitest/coverage-v8)
-        continue-on-error: true  
+      - name: Build Vitest Coverage (@vitest/coverage-v8)
+        continue-on-error: true
         run: nix develop --command bash -c "npm i && npm run coverage"
-      - name: Move Vitest Coverage Reposrt
+      - name: Move Vitest Coverage Report
         continue-on-error: true
         run: |
           mv ./coverage/ ./docs/coverage
