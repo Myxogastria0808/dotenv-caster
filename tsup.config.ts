@@ -8,6 +8,5 @@ export default defineConfig([
     splitting: false,
     sourcemap: true,
     dts: true,
-    target: 'es2024',
   },
 ]);
