@@ -55,26 +55,26 @@ NULL_SAMPLE=null
 The following is an example of use. `dotenv-caster` is intended for use in projects that use `dotenv`.
 
 ```typescript
-import dotenv from 'dotenv';
-//import dotenv-caster
+import * as dotenv from 'dotenv';
+// Import dotenv-caster
 import { DotEnvCaster } from 'dotenv-caster';
 
 dotenv.config();
 
-//Create an instance
+// Create an instance
 const dotenvCaster = new DotEnvCaster();
 
-//string | undefined -> string
+// string | undefined -> string
 const stringSample: string = dotenvCaster.castString(process.env.STRING_SAMPLE);
-//string | undefined -> number
+// string | undefined -> number
 const numberSample: number = dotenvCaster.castNumber(process.env.NUMBER_SAMPLE);
-//string | undefined -> bigint
+// string | undefined -> bigint
 const bigIntSample: bigint = dotenvCaster.castBigInt(process.env.BIGINT_SAMPLE);
-//string | undefined -> symbol
+// string | undefined -> symbol
 const symbolSample: symbol = dotenvCaster.castSymbol(process.env.SYMBOL_SAMPLE);
-//string | undefined -> boolean
+// string | undefined -> boolean
 const booleanSample: boolean = dotenvCaster.castBoolean(process.env.BOOLEAN_SAMPLE);
-//string | undefined -> null
+// string | undefined -> null
 const nullSample: null = dotenvCaster.castNull(process.env.NULL_SAMPLE);
 ```
 
@@ -85,51 +85,51 @@ const nullSample: null = dotenvCaster.castNull(process.env.NULL_SAMPLE);
 When using `dotenv-caster`, first import `dotenv-caster` and create an instance as follows.
 
 ```typescript
-//import dotenv-caster
+// Import dotenv-caster
 import { DotEnvCaster } from 'dotenv-caster';
 
-//Create an instance
+// Create an instance
 const dotenvCaster = new DotEnvCaster();
 ```
 
 ### string | undefined → string
 
 ```typescript
-//string | undefined -> string
+// string | undefined -> string
 const stringSample: string = dotenvCaster.castString(process.env.STRING_SAMPLE);
 ```
 
 ### string | undefined → number
 
 ```typescript
-//string | undefined -> number
+// string | undefined -> number
 const numberSample: number = dotenvCaster.castNumber(process.env.NUMBER_SAMPLE);
 ```
 
 ### string | undefined → bigint
 
 ```typescript
-//string | undefined -> bigint
+// string | undefined -> bigint
 const bigIntSample: bigint = dotenvCaster.castBigInt(process.env.BIGINT_SAMPLE);
 ```
 
 ### string | undefined → symbol
 
 ```typescript
-//string | undefined -> symbol
+// string | undefined -> symbol
 const symbolSample: symbol = dotenvCaster.castSymbol(process.env.SYMBOL_SAMPLE);
 ```
 
 ### string | undefined → boolean
 
 ```typescript
-//string | undefined -> boolean
+// string | undefined -> boolean
 const booleanSample: boolean = dotenvCaster.castBoolean(process.env.BOOLEAN_SAMPLE);
 ```
 
 ### string | undefined → null
 
 ```typescript
-//string | undefined -> null
+// string | undefined -> null
 const nullSample: null = dotenvCaster.castNull(process.env.NULL_SAMPLE);
 ```

@@ -1,5 +1,5 @@
 import { describe, expect, expectTypeOf, test } from 'vitest';
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 import { DotEnvCaster } from './DotEnvCaster';
 
 // dotenv.config();
