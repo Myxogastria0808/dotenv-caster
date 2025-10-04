@@ -1,1 +1,1 @@
-export * from './lib/DotEnvCaster';
+export { DotEnvCaster } from './lib/DotEnvCaster';
