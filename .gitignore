@@ -1,6 +1,9 @@
-.direnv
-coverage
-dist
-docs
-html
-node_modules
+# Nix
+.direnv/
+
+# JavaScript
+coverage/
+dist/
+docs/
+html/
+node_modules/
