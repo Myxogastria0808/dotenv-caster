@@ -6,7 +6,7 @@
 ![GitHub Release](https://img.shields.io/github/v/release/Myxogastria0808/dotenv-caster)
 ![NPM Type Definitions](https://img.shields.io/npm/types/dotenv-caster)
 [![Download NPM](https://img.shields.io/npm/dm/dotenv-caster.svg?style=flat)](https://www.npmjs.com/package/dotenv-caster/)
-[![npm total downloads](https://badgen.net/npm/dt/dotenv-caster?label=downloads%20all%20time&color=cyan)](https://www.npmjs.com/package/dotenv-caster/)
+[![NPM Downloads All Time](https://badgen.net/npm/dt/dotenv-caster?label=downloads%20all%20time&color=cyan)](https://www.npmjs.com/package/dotenv-caster/)
 ![GitHub License](https://img.shields.io/github/license/Myxogastria0808/dotenv-caster)
 ![Vitest](https://img.shields.io/badge/-vitest-6e9f18?style=flat&logo=vitest&logoColor=ffffff)
 ![Typedoc](https://img.shields.io/badge/docs-typedoc-blue?style=flat-square&logo=typescript&logoColor=white)
