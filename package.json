@@ -1,6 +1,6 @@
 {
   "name": "dotenv-caster",
-  "version": "2.1.22",
+  "version": "2.1.23",
   "description": "This package is a tiny package that converts `string | undefined` to certain `primitive types`.",
   "keywords": [
     "dotenv",
