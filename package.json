@@ -48,7 +48,7 @@
     "url": "https://github.com/Myxogastria0808/dotenv-caster/issues"
   },
   "homepage": "https://myxogastria0808.github.io/dotenv-caster/",
-  "packageManager": "pnpm@10.26.1",
+  "packageManager": "pnpm@10.27.0",
   "peerDependencies": {
     "dotenv": "^17.2.3"
   },
