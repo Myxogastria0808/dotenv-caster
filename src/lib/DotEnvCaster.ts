@@ -173,10 +173,13 @@ export class DotEnvCaster {
    */
   castBoolean(constant: string | undefined): boolean {
     if (typeof constant === 'string') {
-      if (!(constant === 'true' || constant === 'false')) {
+      if (constant === 'true') {
+        return true;
+      } else if (constant === 'false') {
+        return false;
+      } else {
         throw new Error('This constant can not convert to boolean.');
       }
-      return Boolean(constant);
     } else {
       throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
     }
