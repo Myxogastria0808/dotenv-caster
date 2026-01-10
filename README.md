@@ -14,6 +14,11 @@
 
 dotenv-caster is a tiny package that converts `string | undefined` to certain `primitive types`.
 
+> [!WARNING]
+> A critical bug has been discovered in this package in versions 2.2.0 and below.
+>
+> Please ensure that you are using the latest version (at least v2.2.1 or newer) when using this package.
+
 > [!IMPORTANT]
 > Be sure to use the latest version.
 
