@@ -41,7 +41,6 @@ https://myxogastria0808.github.io/dotenv-caster/html/
 >
 > I recommend that you look at the documentation at [typedoc](https://myxogastria0808.github.io/dotenv-caster/).
 
-
 https://deepwiki.com/Myxogastria0808/dotenv-caster/
 
 ## How to Use
@@ -139,3 +138,4 @@ const booleanSample: boolean = dotenvCaster.castBoolean(process.env.BOOLEAN_SAMP
 // string | undefined -> null
 const nullSample: null = dotenvCaster.castNull(process.env.NULL_SAMPLE);
 ```
+
