@@ -19,7 +19,7 @@ importers:
         version: 4.0.18(vitest@4.0.18)
       dotenv:
         specifier: ^17.2.3
-        version: 17.3.1
+        version: 17.4.1
       tsup:
         specifier: ^8.5.0
         version: 8.5.1(postcss@8.5.6)(typescript@5.9.3)(yaml@2.8.3)
@@ -789,8 +789,8 @@ packages:
       supports-color:
         optional: true
 
-  dotenv@17.3.1:
-    resolution: {integrity: sha512-IO8C/dzEb6O3F9/twg6ZLXz164a2fhTnEWb95H23Dm4OuN+92NmEAlTrupP9VW6Jm3sO26tQlqyvyi4CsnY9GA==}
+  dotenv@17.4.1:
+    resolution: {integrity: sha512-k8DaKGP6r1G30Lx8V4+pCsLzKr8vLmV2paqEj1Y55GdAgJuIqpRp5FfajGF8KtwMxCz9qJc6wUIJnm053d/WCw==}
     engines: {node: '>=12'}
 
   entities@4.5.0:
@@ -1671,7 +1671,7 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
-  dotenv@17.3.1: {}
+  dotenv@17.4.1: {}
 
   entities@4.5.0: {}
 
