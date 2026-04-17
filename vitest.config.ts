@@ -4,6 +4,7 @@ export default defineConfig({
   test: {
     // @vitest/coverage-v8
     coverage: {
+      provider: "v8",
       enabled: true,
       reporter: ["html"],
       exclude: [
