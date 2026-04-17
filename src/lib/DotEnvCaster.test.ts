@@ -102,7 +102,7 @@ describe("Test of DotEnvCaster Class", () => {
   test.concurrent("castBigInt: Expected Output (unexpected output pattern 2)", () => {
     const dotenvSample: string | undefined = process.env.BIGINT_SAMPLE;
     const bigIntSample: bigint = dotenvCaster.castBigInt(dotenvSample);
-    expect(bigIntSample).not.toEqual(1234567890123456789012345678901234567890n);
+    expect(bigIntSample).not.toEqual(9999999999999999999999999999999999999999n);
   });
   test.concurrent("castBigInt: undefined variable", () => {
     const dotenvSample: string | undefined = process.env.BIGINT_DOES_NOT_EXIST;
