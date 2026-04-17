@@ -60,9 +60,9 @@ NULL_SAMPLE=null
 The following is an example of use. `dotenv-caster` is intended for use in projects that use `dotenv`.
 
 ```typescript
-import * as dotenv from 'dotenv';
+import * as dotenv from "dotenv";
 // Import dotenv-caster
-import { DotEnvCaster } from 'dotenv-caster';
+import { DotEnvCaster } from "dotenv-caster";
 
 dotenv.config();
 
@@ -91,7 +91,7 @@ When using `dotenv-caster`, first import `dotenv-caster` and create an instance 
 
 ```typescript
 // Import dotenv-caster
-import { DotEnvCaster } from 'dotenv-caster';
+import { DotEnvCaster } from "dotenv-caster";
 
 // Create an instance
 const dotenvCaster = new DotEnvCaster();

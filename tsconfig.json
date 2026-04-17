@@ -1,7 +1,7 @@
 {
-	"compilerOptions": {
-		"target": "es2024",
-		"moduleResolution": "node"
-	}
+  "compilerOptions": {
+    "target": "es2024",
+    "moduleResolution": "node"
+  }
 }
 

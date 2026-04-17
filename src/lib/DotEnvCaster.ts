@@ -44,10 +44,12 @@ export class DotEnvCaster {
    * ```
    */
   castString(constant: string | undefined): string {
-    if (typeof constant === 'string') {
+    if (typeof constant === "string") {
       return constant;
     } else {
-      throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
+      throw new Error(
+        "This type of constant is undefined. You have to set the string value in this constant.",
+      );
     }
   }
 
@@ -74,14 +76,16 @@ export class DotEnvCaster {
    * ```
    */
   castNumber(constant: string | undefined): number {
-    if (typeof constant === 'string') {
+    if (typeof constant === "string") {
       const result = Number(constant);
       if (isNaN(result) || !isFinite(result)) {
-        throw new Error('This constant can not convert to number.');
+        throw new Error("This constant can not convert to number.");
       }
       return result;
     } else {
-      throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
+      throw new Error(
+        "This type of constant is undefined. You have to set the string value in this constant.",
+      );
     }
   }
 
@@ -108,14 +112,16 @@ export class DotEnvCaster {
    * ```
    */
   castBigInt(constant: string | undefined): bigint {
-    if (typeof constant === 'string') {
+    if (typeof constant === "string") {
       try {
         return BigInt(constant);
       } catch {
-        throw new Error('This constant can not convert to bigint.');
+        throw new Error("This constant can not convert to bigint.");
       }
     } else {
-      throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
+      throw new Error(
+        "This type of constant is undefined. You have to set the string value in this constant.",
+      );
     }
   }
 
@@ -142,10 +148,12 @@ export class DotEnvCaster {
    * ```
    */
   castSymbol(constant: string | undefined): symbol {
-    if (typeof constant === 'string') {
+    if (typeof constant === "string") {
       return Symbol(constant);
     } else {
-      throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
+      throw new Error(
+        "This type of constant is undefined. You have to set the string value in this constant.",
+      );
     }
   }
 
@@ -172,16 +180,18 @@ export class DotEnvCaster {
    * ```
    */
   castBoolean(constant: string | undefined): boolean {
-    if (typeof constant === 'string') {
-      if (constant === 'true') {
+    if (typeof constant === "string") {
+      if (constant === "true") {
         return true;
-      } else if (constant === 'false') {
+      } else if (constant === "false") {
         return false;
       } else {
-        throw new Error('This constant can not convert to boolean.');
+        throw new Error("This constant can not convert to boolean.");
       }
     } else {
-      throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
+      throw new Error(
+        "This type of constant is undefined. You have to set the string value in this constant.",
+      );
     }
   }
 
@@ -208,14 +218,16 @@ export class DotEnvCaster {
    * ```
    */
   castNull(constant: string | undefined): null {
-    if (typeof constant === 'string') {
-      if (constant === 'null') {
+    if (typeof constant === "string") {
+      if (constant === "null") {
         return null;
       } else {
-        throw new Error('This constant can not convert to null.');
+        throw new Error("This constant can not convert to null.");
       }
     } else {
-      throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
+      throw new Error(
+        "This type of constant is undefined. You have to set the string value in this constant.",
+      );
     }
   }
 }

@@ -3,10 +3,26 @@
   "version": "2.2.3",
   "description": "This package is a tiny package that converts `string | undefined` to certain `primitive types`.",
   "keywords": [
-    "dotenv",
     ".env",
-    "typescript",
-    "primitive type"
+    "dotenv",
+    "primitive type",
+    "typescript"
+  ],
+  "homepage": "https://myxogastria0808.github.io/dotenv-caster/",
+  "bugs": {
+    "url": "https://github.com/Myxogastria0808/dotenv-caster/issues"
+  },
+  "license": "MIT",
+  "author": "Yuki Osada",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myxogastria0808/dotenv-caster.git"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "COPYING"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -23,12 +39,6 @@
       }
     }
   },
-  "files": [
-    "dist",
-    "package.json",
-    "README.md",
-    "COPYING"
-  ],
   "scripts": {
     "pub": "npm publish --access=public",
     "unpub": "npm unpublish  dotenv-caster@${npm_config_v}",
@@ -37,20 +47,6 @@
     "test": "vitest run --typecheck",
     "coverage": "vitest run --coverage --typecheck",
     "ui": "vitest run --ui --typecheck"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Myxogastria0808/dotenv-caster.git"
-  },
-  "author": "Yuki Osada",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Myxogastria0808/dotenv-caster/issues"
-  },
-  "homepage": "https://myxogastria0808.github.io/dotenv-caster/",
-  "packageManager": "pnpm@10.33.0",
-  "peerDependencies": {
-    "dotenv": "^17.2.3"
   },
   "devDependencies": {
     "@types/node": "^24.9.1",
@@ -61,6 +57,10 @@
     "typedoc": "^0.28.14",
     "typescript": "^5.9.3",
     "vitest": "^4.0.3"
-  }
+  },
+  "peerDependencies": {
+    "dotenv": "^17.2.3"
+  },
+  "packageManager": "pnpm@10.33.0"
 }
 

@@ -2,7 +2,7 @@ name: docs
 
 on:
   push:
-    branches: ['main']
+    branches: ["main"]
   workflow_dispatch:
 
 jobs:
@@ -41,3 +41,4 @@ jobs:
       - name: If Failed Test, exit 1
         if: steps.vitest.outcome == 'failure'
         run: exit 1
+
