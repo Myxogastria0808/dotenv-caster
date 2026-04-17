@@ -285,7 +285,19 @@
 <a name='L220'></a><a href='#L220'>220</a>
 <a name='L221'></a><a href='#L221'>221</a>
 <a name='L222'></a><a href='#L222'>222</a>
-<a name='L223'></a><a href='#L223'>223</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L223'></a><a href='#L223'>223</a>
+<a name='L224'></a><a href='#L224'>224</a>
+<a name='L225'></a><a href='#L225'>225</a>
+<a name='L226'></a><a href='#L226'>226</a>
+<a name='L227'></a><a href='#L227'>227</a>
+<a name='L228'></a><a href='#L228'>228</a>
+<a name='L229'></a><a href='#L229'>229</a>
+<a name='L230'></a><a href='#L230'>230</a>
+<a name='L231'></a><a href='#L231'>231</a>
+<a name='L232'></a><a href='#L232'>232</a>
+<a name='L233'></a><a href='#L233'>233</a>
+<a name='L234'></a><a href='#L234'>234</a>
+<a name='L235'></a><a href='#L235'>235</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -335,6 +347,8 @@
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -369,6 +383,8 @@
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -429,10 +445,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -495,6 +515,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">3x</span>
@@ -503,6 +525,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -553,10 +577,12 @@ export class DotEnvCaster {
    * ```
    */
   castString(constant: string | undefined): string {
-    if (typeof constant === 'string') {
+    if (typeof constant === "string") {
       return constant;
     } else {
-      throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
+      throw new Error(
+        "This type of constant is undefined. You have to set the string value in this constant.",
+      );
     }
   }
 &nbsp;
@@ -583,14 +609,16 @@ export class DotEnvCaster {
    * ```
    */
   castNumber(constant: string | undefined): number {
-    if (typeof constant === 'string') {
+    if (typeof constant === "string") {
       const result = Number(constant);
       if (isNaN(result) || !isFinite(result)) {
-        throw new Error('This constant can not convert to number.');
+        throw new Error("This constant can not convert to number.");
       }
       return result;
     } else {
-      throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
+      throw new Error(
+        "This type of constant is undefined. You have to set the string value in this constant.",
+      );
     }
   }
 &nbsp;
@@ -617,14 +645,16 @@ export class DotEnvCaster {
    * ```
    */
   castBigInt(constant: string | undefined): bigint {
-    if (typeof constant === 'string') {
+    if (typeof constant === "string") {
       try {
         return BigInt(constant);
       } catch {
-        throw new Error('This constant can not convert to bigint.');
+        throw new Error("This constant can not convert to bigint.");
       }
     } else {
-      throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
+      throw new Error(
+        "This type of constant is undefined. You have to set the string value in this constant.",
+      );
     }
   }
 &nbsp;
@@ -651,10 +681,12 @@ export class DotEnvCaster {
    * ```
    */
   castSymbol(constant: string | undefined): symbol {
-    if (typeof constant === 'string') {
+    if (typeof constant === "string") {
       return Symbol(constant);
     } else {
-      throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
+      throw new Error(
+        "This type of constant is undefined. You have to set the string value in this constant.",
+      );
     }
   }
 &nbsp;
@@ -681,16 +713,18 @@ export class DotEnvCaster {
    * ```
    */
   castBoolean(constant: string | undefined): boolean {
-    if (typeof constant === 'string') {
-      if (constant === 'true') {
+    if (typeof constant === "string") {
+      if (constant === "true") {
         return true;
-      <span class="missing-if-branch" title="if path not taken" >I</span>} else if (constant === 'false') {
+      <span class="missing-if-branch" title="if path not taken" >I</span>} else if (constant === "false") {
 <span class="cstat-no" title="statement not covered" >        return false;</span>
       } else {
-        throw new Error('This constant can not convert to boolean.');
+        throw new Error("This constant can not convert to boolean.");
       }
     } else {
-      throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
+      throw new Error(
+        "This type of constant is undefined. You have to set the string value in this constant.",
+      );
     }
   }
 &nbsp;
@@ -717,14 +751,16 @@ export class DotEnvCaster {
    * ```
    */
   castNull(constant: string | undefined): null {
-    if (typeof constant === 'string') {
-      if (constant === 'null') {
+    if (typeof constant === "string") {
+      if (constant === "null") {
         return null;
       } else {
-        throw new Error('This constant can not convert to null.');
+        throw new Error("This constant can not convert to null.");
       }
     } else {
-      throw new Error('This type of constant is undefined. You have to set the string value in this constant.');
+      throw new Error(
+        "This type of constant is undefined. You have to set the string value in this constant.",
+      );
     }
   }
 }
@@ -736,7 +772,7 @@ export class DotEnvCaster {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-04-17T04:50:59.903Z
+                at 2026-04-17T04:54:11.380Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
