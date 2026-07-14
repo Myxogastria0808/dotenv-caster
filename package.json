@@ -55,7 +55,7 @@
     "dotenv": "^17.4.2",
     "tsup": "^8.5.1",
     "typedoc": "^0.28.20",
-    "typescript": "^5.9.3",
+    "typescript": "^7.0.0",
     "vitest": "^4.1.10"
   },
   "peerDependencies": {
