@@ -5,6 +5,12 @@
   "dependencyDashboard": false,
   "prConcurrentLimit": 0,
   "schedule": ["* 0 * * *"],
-  "automergeSchedule": ["* * * * 6"]
+  "automergeSchedule": ["* * * * 6"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    }
+  ]
 }
 

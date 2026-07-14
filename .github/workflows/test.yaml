@@ -19,4 +19,8 @@ jobs:
           nix_path: nixpkgs=channel:nixpkgs-unstable
       - name: Test
         run: nix develop --command bash -c "pnpm i && pnpm run test"
+      - name: Build
+        run: nix develop --command bash -c "pnpm i && pnpm run build"
+      - name: Typedoc
+        run: nix develop --command bash -c "pnpm i && pnpm run typedoc"
 
